@@ -25,6 +25,15 @@ func _physics_process(delta: float) -> void:
 	elif direction < 0: 
 		animated_sprite_2d.flip_h = true
 	
+	#Play Animations
+	if is_on_floor():
+		if direction == 0: 
+			animated_sprite_2d.play("Idle")
+		else:
+			animated_sprite_2d.play("Run")
+	else: 
+		animated_sprite_2d.play("Jump")
+		
 	if direction:
 		velocity.x = direction * SPEED
 	else:
