@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://bjdeauodwysb1" path="res://assets/sprites/world_tileset.png" id="2_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://djte5drdlpdwc" path="res://scenes/platform.tscn" id="3_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://njt1hpndwpq4" path="res://scenes/killzone.tscn" id="4_lbhrr"]
+[ext_resource type="PackedScene" uid="uid://budrxojhvxbcv" path="res://scenes/player2.tscn" id="5_0tnpc"]
 [ext_resource type="PackedScene" uid="uid://iks47mux438k" path="res://scenes/coin.tscn" id="5_iywne"]
 [ext_resource type="PackedScene" uid="uid://dsfm31wa7kt26" path="res://scenes/green_slime_idle.tscn" id="6_p57ef"]
 [ext_resource type="FontFile" uid="uid://bmwls57mpu8ql" path="res://assets/fonts/PixelOperator8.ttf" id="7_u5sy4"]
@@ -378,6 +379,11 @@ position = Vector2(175, 12)
 zoom = Vector2(4, 4)
 limit_bottom = 66
 limit_smoothed = true
+
+[node name="Player2" parent="." unique_id=122705986 instance=ExtResource("5_0tnpc")]
+position = Vector2(15, -67)
+
+[node name="Camera2D" type="Camera2D" parent="Player2" unique_id=828892505]
 
 [node name="killzone" parent="." unique_id=1442398198 instance=ExtResource("4_lbhrr")]
 
