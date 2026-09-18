@@ -380,11 +380,6 @@ zoom = Vector2(4, 4)
 limit_bottom = 66
 limit_smoothed = true
 
-[node name="Player2" parent="." unique_id=122705986 instance=ExtResource("5_0tnpc")]
-position = Vector2(15, -67)
-
-[node name="Camera2D" type="Camera2D" parent="Player2" unique_id=828892505]
-
 [node name="killzone" parent="." unique_id=1442398198 instance=ExtResource("4_lbhrr")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killzone" unique_id=1766954845]
@@ -443,3 +438,6 @@ theme_override_colors/font_color = Color(0.007843138, 0.14901961, 0.34901962, 1)
 theme_override_fonts/font = ExtResource("7_u5sy4")
 theme_override_font_sizes/font_size = 8
 text = "Space to Jump"
+
+[node name="Player2" parent="." unique_id=1207740702 instance=ExtResource("5_0tnpc")]
+position = Vector2(13, -58)
